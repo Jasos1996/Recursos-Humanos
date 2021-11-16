@@ -1,0 +1,174 @@
+
+:root{
+    --main-color: rgb(203,45,62);
+    --background-color : rgb(253,253,253);
+    --main-shadow-color : rgba(141, 141, 141,0.2);
+    box-sizing: border-box;
+  }
+
+.grip-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 10px;
+    justify-content: center;
+    
+ }
+
+.grip-tables{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+padding: 10px;
+justify-content: center;
+
+ }
+    
+    .grip-cards div {
+    transition: 600ms;
+    margin: 20px;
+    width: auto;
+    height: 150px;
+    background: var(--background-color);
+    display: block;
+    text-align:center;
+    border-radius: 25px;
+    border: none ;
+
+    
+    }
+
+    .table-nivel-escolaridad, .table-categoria-ocupacional, .table-rango-edades{
+     display: flex;
+     justify-content: center;
+        
+     
+
+        }  
+
+    .card:hover h4{
+     color: rgb(253,253,253);
+    }
+
+    .card:hover{
+    background: var(--main-color);
+    }
+    .card:hover span{
+        color: rgb(253,253,253);
+    }        
+
+
+    .card h4 {
+ color: var(--main-color);
+  font-size: 20px;      
+  margin: 15px;
+        }
+
+      
+        
+    .card span {
+        color: rgb(124, 124, 124);
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    @media only screen and (max-width: 1200px){
+        .grip-cards{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            padding: 10px;
+            justify-content: center;} 
+    } 
+    
+    @media only screen and (max-width: 950px){
+        .grip-cards{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            padding: 10px;
+            justify-content: center;} 
+    } 
+    
+    @media only screen and (max-width: 750px){
+        .grip-cards{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            padding: 10px;
+            justify-content: center;} 
+    } 
+
+
+    @media only screen and (max-width: 1250px){
+        .grip-tables{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            padding: 10px;
+            justify-content: center;} 
+    
+    } 
+    
+    @media only screen and (max-width: 750px){
+        .grip-tables{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            padding: 10px;
+            justify-content: center;} 
+    } 
+
+table{
+    border-collapse: collapse;
+    margin: 20px 20px 20px 20px;
+  
+}
+     .table  th{
+        font-size: 18px;   
+        height: 18px;
+        background-color:var(--main-color);
+        color: white;
+        padding: 12px;
+        border-bottom: 3px solid rgb(124, 124, 124);
+        
+        
+     }   
+
+     .table  th:nth-child(odd){
+        border-radius: 10px 0px 0px 0px; 
+     }
+
+     .table  th:nth-child(even){
+        border-radius: 0px 10px 0px 0px; 
+     }
+
+     .table td{
+       
+        padding-top: 3px;
+        padding: 5px 15px;
+        font-size: 16px;   
+        height: 20px;
+        color: black;
+       
+     }   
+
+     .table tr:nth-child(even) td{
+       
+     background: #dddd;
+     color: black;
+
+     }   
+
+     .table tr:hover td{
+        background: var(--main-color);
+        color: rgb(255, 255, 255);
+        }   
+   
+     td:nth-child(even) {
+        text-align: center;
+    }  
+
+    tbody {
+
+       border-bottom: 3px solid rgb(124, 124, 124);
+
+    } 
+
+    
+
+  
+    

@@ -1,0 +1,289 @@
+body{
+padding: 0;
+margin: 0;
+font-size: 16px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+background:rgb(253, 253, 253);
+}
+
+
+:root{
+  --main-color: rgb(203,45,62);
+  --background-color : rgb(253,253,253);
+  --main-shadow-color : rgba(141, 141, 141,0.2);
+}
+
+ .sidebar{
+    overflow:hidden;
+    display: flex;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 230px;
+    min-height: 100%; 
+    min-width: 230px;
+    background: var(--main-color);
+    border-radius: 0px 25px 25px 0px ;
+    transition: 1300ms;
+  
+  
+ }
+
+ .sidebar-content{
+
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 230px;
+    height: 100%;
+    min-height: 650px;
+    min-width: 250px;
+   
+  
+ }
+
+ .sidebar-head{
+ width:230px;
+ height: 20vh;
+ display: block;
+ }
+
+.section-user-show{
+  
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.section-user-hide{
+  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    
+    }
+
+
+.info-user{
+    text-align: center;
+ }
+
+.image-user-show {
+    
+   transition: 1300ms; 
+   margin-top: 10px;
+   width: 15vh;
+   border-radius: 20%;
+   border: 5px solid var(--main-color);
+   
+}
+
+.image-user-hide {
+    transform: translateX(-89px);
+    transition: 1300ms;
+    margin-top: 15px;
+    margin-left: 14px;
+    width: 35px;
+    border-radius: 20%;
+    border: 2px solid var(--background-color);
+ }
+
+.info-user-show {
+    font-size: 14px;
+    color: var(--background-color);
+    margin-top: 2px;
+    }
+
+.info-user-hide {
+
+transition: 1300ms;
+color: var(--background-color);
+visibility:hidden;
+ }
+
+.sidebar-head  li{
+    margin-left: 5px;
+    margin-top: 20px;
+    width: 50px;
+    height: 35px; 
+    list-style-type: none;
+    list-style: none;
+    
+}
+
+.toggle_sidebar{
+    
+   
+    font-size: 20px;
+    color: var(--background-color);
+    text-decoration: none;
+    
+}
+
+.btn-bell-show{
+    transition: 2500ms;
+    left: 180px;
+    top: 30px;
+    color: var(--background-color);
+    font-size: 25px;
+    float:right;
+    position: absolute;
+   
+ }
+
+ .btn-bell-hide{
+    transition: 2500ms;
+    top: 120px;
+    left: 20px;
+    color: var(--main-color);
+    font-size: 25px;
+    float:right;
+    position: absolute;
+   
+ }
+.sidebar-head li a span{
+ 
+    padding-right: 10px;
+    font-size: 45px;
+    margin-left: 5px;
+  
+ 
+}
+
+
+ .sidebar-body{
+    margin-top: 80px;
+    width:250px;
+    height: 50vh;
+
+}
+
+.sidebar-body ul{
+    list-style-type: none;
+    list-style: none;
+    padding: 10px;
+
+  
+}
+
+.sidebar-body ul li{
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 35px;
+
+ 
+}
+
+
+
+.links_sidebar_show{
+ 
+    float: left;
+    font-size: 17px;
+    color: var(--background-color);
+    text-decoration: none;
+    width: 235px;  
+}
+
+.links_sidebar_hide{
+    transition: 500ms;
+    float: left;
+    font-size: 17px;
+    color: var(--main-color);
+    text-decoration: none;
+    width: 235px;  
+    
+}
+
+.links_sidebar_show:hover{
+    transition: 1s;
+    height: 35px;
+    background: var(--background-color);
+    border-radius: 25px 0px 0px 25px;
+    color: var(--main-color);    
+    
+}
+
+.links_sidebar_hide:hover{
+    transition: 1s;
+    height: 35px;
+    background: var(--main-color);
+    border-radius: 25px 0px 0px 25px;
+    color: var(--background-color);  
+    
+}
+
+
+
+.sidebar-body ul li a span{
+    padding-right: 15px;
+    font-size: 30px;
+    margin-left: 5px;
+
+}
+
+
+
+.sidebar-footer{
+    width:230px;
+    height: 20vh;
+    
+
+}
+
+
+.sidebar-footer li{
+    margin-left: 5px;
+    height: 35px;
+    list-style-type: none;
+    list-style: none;
+    padding: 10px;
+ 
+}
+
+.sidebar-footer  li a span{
+    padding-right: 15px;
+    font-size: 30px;
+    margin-left: 5px;
+
+}
+
+
+
+.sidebar-footer  li a{
+    padding-right: 15px;
+    font-size: 20px;
+    margin-left: 5px;
+
+}
+
+
+.main_content{
+    
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-left: 230px;
+    width: auto;
+    height: 100vh;
+    transition: 1300ms;
+    min-width: 408px;
+    
+
+}
+.main_headear{
+height: 100px;
+border-bottom: 0.5px solid rgb(240, 240, 240);    
+box-shadow: 2px 2px 5px var(--main-shadow-color);
+text-align: center;
+display: flex;
+justify-content: center;
+}
+
+.main_headear h1{
+    color: var(--main-color);
+    font-size: 2.5rem;
+    }
+
+
+
